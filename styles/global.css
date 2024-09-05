@@ -14,11 +14,28 @@
 
   --text-color-primary: #F1F5F9;
   --text-color-secondary: #CBD5E1;
-  --text: font-family: "Archivo", sans-serif;
-
+  --font-family: "Archivo", sans-serif;
+  --font-h1: 800 24px/135% var(--font-family)
+  --font-h2: 800 16px/140% var(--font-family)
+  --font-h3: 800 14px/140% var(--font-family)
+  --font-span 800 14px/145% var(--font-family)
+  --font-p 800 14px/160% var(--font-family)
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color-primary);
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+h1,h2,h3 {
+  font: inherit;
 }
