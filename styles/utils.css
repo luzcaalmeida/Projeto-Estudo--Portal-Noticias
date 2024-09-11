@@ -23,3 +23,23 @@
 .gap-32 {
   gap: 32px;
 }
+
+.weklyhead {
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 12px;
+  a {
+    justify-content: right;
+    gap: 4px;
+    align-items: center;
+  }
+
+  span {
+    display: inline-flex;
+    background-image: url(../assets/ArrowRight.png);
+    width: 16px;
+    height: 16px;
+  }
+  a:hover span {
+    background-image: url(../assets/ArrowRightHover.png);
+  }
+}
