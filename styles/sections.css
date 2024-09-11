@@ -1,0 +1,71 @@
+#featured {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+
+    figcaption {
+      position: absolute;
+      bottom: 0px;
+    }
+
+    .figcaption-lg {
+      position: absolute;
+      bottom: 0px;
+      padding: 24px;
+    }
+
+    .figcaption-sm {
+      position: absolute;
+      bottom: 0px;
+      padding: 12px;
+    }
+  }
+}
+.weklyhead {
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 12px;
+  a {
+    justify-content: right;
+    gap: 4px;
+    align-items: center;
+  }
+
+  span {
+    background-image: url(../assets/ArrowRight.png);
+    width: 16px;
+    height: 16px;
+  }
+  a:hover span {
+    background-image: url(../assets/ArrowRightHover.png);
+  }
+}
+#newswekly {
+  grid-template-columns: repeat(4, 292px);
+  gap: 16px;
+
+  padding-block: 24px;
+
+  img {
+    height: 160px;
+  }
+
+  span {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+}

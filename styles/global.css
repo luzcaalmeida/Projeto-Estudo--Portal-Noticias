@@ -6,28 +6,40 @@
 }
 
 :root {
-  --brand-color-light: #60A5FA;
-  --brand-color-dark: #1D4ED8;
+  --brand-color-light: #60a5fa;
+  --brand-color-dark: #1d4ed8;
 
-  --bg-color: #0F172A;
-  --stroke-color: #1E293B;
+  --bg-color: #0f172a;
+  --stroke-color: #1e293b;
 
-  --text-color-primary: #F1F5F9;
-  --text-color-secondary: #CBD5E1;
+  --text-color-primary: #f1f5f9;
+  --text-color-secondary: #cbd5e1;
   --font-family: "Archivo", sans-serif;
-  --font-h1: 800 24px/135% var(--font-family)
-  --font-h2: 800 16px/140% var(--font-family)
-  --font-h3: 800 14px/140% var(--font-family)
-  --font-span 800 14px/145% var(--font-family)
-  --font-p 800 14px/160% var(--font-family)
+  --font-h1: 800 24px/135% var(--font-family);
+  --font-h2: 800 16px/140% var(--font-family);
+  --font-h3: 800 14px/140% var(--font-family);
+  --font-span: 800 14px/145% var(--font-family);
+  --font-p: 800 14px/160% var(--font-family);
+  --font-cap-sm: 500 10px/160% var(--font-family)
 }
 
 body {
+
   background-color: var(--bg-color);
   color: var(--text-color-primary);
+  font-family: var(--font-family);
 }
 
-a { 
+main {
+  display: grid;
+
+  gap: 80px;
+  margin-top: 40px;
+  padding-inline: 32px;
+}
+
+a {
+  font: inherit;
   text-decoration: none;
   color: inherit;
 }
@@ -36,6 +48,38 @@ a:hover {
   color: var(--brand-color-light);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.cap-txt-span {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  background-color: var(--brand-color-dark);
+  border-radius: 4px;
+  font: var(--font-cap-sm);
+}
+
+.cap-txt-lg {
+  margin-top: 8px;
+  font: var(--font-h1);
+}
+
+.cap-txt-md {
+  margin-top: 8px;
+  font: var(--font-h2);
+  padding: 12px;
+}
+
+.cap-txt-sm {
+  margin-top: 8px;
+  font: var(--font-h3);
 }
